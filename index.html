@@ -9,14 +9,15 @@
 <body>
 
 <header>
-    <h1>VANGARA THANUSHA</h1>
-    <p>System Administrator</p>
+    <h1>Vangara Thanusha</h1>
+    <p class="role">System Administrator</p>
 
     <nav>
         <a href="#about">About</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
+        <a href="#internship">Internship</a>
         <a href="#projects">Projects</a>
         <a href="#certificates">Certificates</a>
     </nav>
@@ -25,72 +26,89 @@
 <section id="about" class="card">
     <h2>About Me</h2>
     <p>
-        Dedicated System Administrator with 1 year of experience in managing
-        enterprise applications, IT infrastructure, ServiceNow, and Azure DevOps.
+        Dedicated System Administrator with 1 year of hands-on experience in managing
+        enterprise IT infrastructure, application support, and ITSM processes.
+        Proficient in ServiceNow, Azure DevOps, and enterprise healthcare applications.
     </p>
 </section>
 
 <section id="education" class="card">
     <h2>Education</h2>
     <ul>
-        <li>M.Sc Computer Science – Osmania University (93%)</li>
-        <li>B.Sc MPCs – Osmania University (CGPA 8.3)</li>
-        <li>Intermediate – 76%</li>
-        <li>SSC – CGPA 8.2</li>
+        <li><strong>M.Sc Computer Science (2024)</strong> – Osmania University (93%)</li>
+        <li><strong>B.Sc MPCs (2022)</strong> – Osmania University (CGPA 8.3)</li>
+        <li><strong>Intermediate</strong> – 76%</li>
+        <li><strong>SSC</strong> – CGPA 8.2</li>
     </ul>
 </section>
 
 <section id="skills" class="card">
     <h2>Technical Skills</h2>
     <ul>
-        <li>Python, HTML, CSS, JavaScript</li>
-        <li>Django, .NET</li>
-        <li>Azure DevOps, ServiceNow</li>
-        <li>QNXT, BizTalk, CAPTIVA, TFS</li>
-        <li>SQL, MySQL</li>
-        <li>Windows Server</li>
+        <li>Languages: Python, HTML, CSS, JavaScript</li>
+        <li>Frameworks: Django, .NET</li>
+        <li>DevOps Tools: Azure DevOps</li>
+        <li>ITSM Tool: ServiceNow</li>
+        <li>Enterprise Apps: QNXT, BizTalk, CAPTIVA, TFS</li>
+        <li>Databases: SQL, MySQL</li>
+        <li>Operating System: Windows Server</li>
     </ul>
 </section>
 
 <section id="experience" class="card">
     <h2>Work Experience</h2>
     <ul>
-        <li>Windows Server Administration</li>
-        <li>Incident & Change Management (ServiceNow)</li>
-        <li>QNXT Installation & Support</li>
-        <li>Azure DevOps Deployments</li>
-        <li><strong> Spot Award Winner</strong></li>
+        <li>Windows Server administration and monitoring</li>
+        <li>Incident, Change & Service Request management using ServiceNow</li>
+        <li>QNXT installation, configuration, and application support</li>
+        <li>Azure DevOps deployments and coordination with development teams</li>
+        <li><strong>🏆 Spot Award – Recognized for outstanding performance</strong></li>
     </ul>
 
-    <div class="slider">
-        <button onclick="prevImage()">❮</button>
-        <img id="sliderImage" src="assets/spot-award.jpeg" alt="Award">
-        <button onclick="nextImage()">❯</button>
+    <div class="image-box">
+        <img src="assets/spot-award.jpeg" alt="Spot Award Certificate">
+    </div>
+</section>
+
+<!-- ✅ INTERNSHIP SECTION (ONLY ONE IMAGE) -->
+<section id="internship" class="card">
+    <h2>Internship</h2>
+    <p><strong>Machine Learning Intern – Indian Servers</strong></p>
+    <ul>
+        <li>Developed NLP-based Telegram bot (Gita-GPT)</li>
+        <li>Integrated APIs and built intelligent chatbot responses</li>
+        <li>Hands-on experience with Python, NLP, and automation</li>
+    </ul>
+
+    <div class="image-box">
+        <img src="assets/internship-cert.jpeg" alt="Internship Certificate">
     </div>
 </section>
 
 <section id="projects" class="card">
     <h2>Projects</h2>
     <ul class="projects">
-        <li>Attendance Application (.NET)</li>
+        <li>Attendance Application using .NET</li>
         <li>Online Bus Ticket Booking System</li>
-        <li>Video Encryption & Decryption (AES)</li>
-        <li>NLP Telegram Chatbot</li>
-        <li>Hostel Searching Web App</li>
+        <li>Video Encryption & Decryption using AES Algorithm</li>
+        <li>NLP-Infused Telegram Chatbot (Gita-GPT)</li>
+        <li>Hostel Searching Web Application</li>
     </ul>
 </section>
 
+<!-- ✅ CERTIFICATES SECTION (SLIDER FOR ALL OTHER CERTIFICATES) -->
 <section id="certificates" class="card">
     <h2>Certificates</h2>
+
     <div class="slider">
-        <button onclick="prevCert()">❮</button>
+        <button class="arrow" onclick="prevCert()">❮</button>
         <img id="certImage" src="assets/hipaa-cert.jpeg" alt="Certificate">
-        <button onclick="nextCert()">❯</button>
+        <button class="arrow" onclick="nextCert()">❯</button>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Vangara Thanusha | Portfolio</p>
+    <p>© 2026 Vangara Thanusha | Professional Portfolio</p>
 </footer>
 
 <script src="script.js"></script>
