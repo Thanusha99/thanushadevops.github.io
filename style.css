@@ -1,151 +1,97 @@
-/* ===============================
-   GLOBAL STYLES
-================================ */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    margin: 0;
-    font-family: "Segoe UI", Roboto, Arial, sans-serif;
-    background-color: #eef2f7;
-    color: #1f2937;
-    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
 }
 
-/* ===============================
-   HEADER
-================================ */
 header {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: #ffffff;
-    padding: 40px 20px;
+    background: #0a0a0a;
+    color: #fff;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.6rem;
-    letter-spacing: 1.5px;
-}
-
-header p {
-    margin: 8px 0;
-    font-size: 1.1rem;
-}
-
-/* ===============================
-   NAVIGATION
-================================ */
-nav {
-    margin-top: 20px;
+    padding: 2rem;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
-    color: #38bdf8;
-    margin: 0 12px;
+    color: white;
+    margin: 0 15px;
     text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: #e0f2fe;
+    color: #00aaff;
 }
 
-/* ===============================
-   SECTION LAYOUT
-================================ */
 section {
-    background: #ffffff;
-    max-width: 1100px;
-    margin: 30px auto;
-    padding: 35px;
+    background: #fff;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1000px;
     border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* ===============================
-   SECTION HEADINGS
-================================ */
 section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #0f172a;
-    position: relative;
-}
-
-section h2::after {
-    content: "";
-    width: 60px;
-    height: 3px;
-    background: #38bdf8;
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-}
-
-/* ===============================
-   TEXT & LISTS
-================================ */
-p {
-    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #00aaff;
+    display: inline-block;
 }
 
 ul {
-    padding-left: 20px;
+    margin-top: 1rem;
+    list-style: disc inside;
 }
 
-ul li {
-    margin-bottom: 10px;
-}
-
-/* ===============================
-   PROJECT LIST
-================================ */
 .projects-list li {
-    list-style: none;
-    background: #f0f9ff;
-    padding: 14px 18px;
-    border-left: 5px solid #38bdf8;
-    border-radius: 6px;
-    font-weight: 500;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #e8f4ff;
+    padding: 1rem;
+    margin: 10px 0;
+    border-left: 5px solid #00aaff;
 }
 
-.projects-list li:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+/* 🔥 IMAGE SIZE FIX (500x500) */
+section img,
+.certificates img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
 }
 
-/* ===============================
-   FOOTER
-================================ */
+/* Certificate grid */
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
 footer {
-    background: #0f172a;
-    color: #e5e7eb;
+    background: #0a0a0a;
+    color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 0.95rem;
+    padding: 1.5rem;
 }
 
-/* ===============================
-   RESPONSIVE DESIGN
-================================ */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 8px;
-    }
-
-    section {
-        margin: 20px 12px;
-        padding: 25px;
+    section img,
+    .certificates img {
+        width: 100%;
+        height: auto;
     }
 }
