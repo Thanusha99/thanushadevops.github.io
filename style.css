@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -5,125 +6,167 @@
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
+/* BACKGROUND – PROFESSIONAL GRADIENT */
 body {
-    background: linear-gradient(135deg, #eef2f7, #e3eaf2);
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
     color: #1e293b;
     line-height: 1.7;
 }
 
 /* HEADER */
 header {
-    background: #0f172a;
+    background: linear-gradient(135deg, #020617, #0f172a);
     color: white;
     text-align: center;
-    padding: 30px 15px;
+    padding: 35px 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
+    letter-spacing: 1px;
 }
 
 .role {
     font-size: 1.2rem;
-    margin-bottom: 12px;
-    color: #38bdf8;
-}
-
-nav a {
-    color: #e0f2fe;
-    margin: 0 12px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #38bdf8;
-}
-
-/* CARD */
-.card {
-    background: white;
-    max-width: 1000px;
-    margin: 35px auto;
-    padding: 35px;
-    border-radius: 14px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-}
-
-/* ANIMATION */
-.fade {
-    animation: fadeIn 1s ease-in;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-h2 {
-    border-bottom: 3px solid #0f172a;
-    padding-bottom: 6px;
     margin-bottom: 15px;
+    color: #38bdf8;
 }
 
+/* NAV */
+nav a {
+    color: #e5e7eb;
+    margin: 0 14px;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #38bdf8;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* CARD SECTIONS */
+.card {
+    background: #ffffff;
+    max-width: 1050px;
+    margin: 45px auto;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* CARD HOVER EFFECT */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 55px rgba(0,0,0,0.35);
+}
+
+/* SECTION TITLES */
+h2 {
+    border-left: 6px solid #0ea5e9;
+    padding-left: 12px;
+    margin-bottom: 18px;
+    color: #020617;
+}
+
+/* LISTS */
 ul {
-    padding-left: 20px;
+    padding-left: 22px;
 }
 
+ul li {
+    margin-bottom: 8px;
+}
+
+/* HIGHLIGHT BOX */
 .highlight {
-    margin-top: 15px;
-    background: #e0f2fe;
-    padding: 12px;
-    border-left: 5px solid #0f172a;
-    border-radius: 6px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+    padding: 15px;
+    border-left: 6px solid #0284c7;
+    border-radius: 10px;
+    font-weight: 600;
 }
 
-/* IMAGE */
+/* IMAGE BOX */
 .image-box {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .image-box img {
     width: 260px;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* CERTIFICATES */
+/* IMAGE HOVER */
+.image-box img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+}
+
+/* CERTIFICATES GRID */
 .cert-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    margin-top: 25px;
+    gap: 30px;
+    margin-top: 30px;
 }
 
+/* CERTIFICATE CARD */
 .cert-card {
+    background: linear-gradient(145deg, #f8fafc, #eef2f7);
+    padding: 18px;
+    border-radius: 16px;
     text-align: center;
-    background: #f8fafc;
-    padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+/* CERTIFICATE HOVER */
+.cert-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.35);
+}
+
+/* CERTIFICATE IMAGE */
 .cert-card img {
     width: 200px;
     height: 140px;
     object-fit: contain;
+    border-radius: 10px;
 }
 
+/* CERTIFICATE TEXT */
 .cert-card p {
-    margin-top: 10px;
-    font-weight: 600;
+    margin-top: 12px;
+    font-weight: 700;
     font-size: 14px;
+    color: #020617;
 }
 
 /* FOOTER */
 footer {
-    background: #0f172a;
-    color: white;
+    background: #020617;
+    color: #e5e7eb;
     text-align: center;
-    padding: 18px;
-    margin-top: 40px;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 14px;
 }
