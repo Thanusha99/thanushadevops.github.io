@@ -1,172 +1,100 @@
-/* RESET */
+:root {
+    --bg: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    --card: #ffffff;
+    --text: #1e293b;
+    --accent: #38bdf8;
+}
+
+body.dark {
+    --bg: #020617;
+    --card: #0f172a;
+    --text: #e5e7eb;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: Segoe UI, Arial, sans-serif;
 }
 
-/* BACKGROUND – PROFESSIONAL GRADIENT */
 body {
-    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-    color: #1e293b;
-    line-height: 1.7;
+    background: var(--bg);
+    color: var(--text);
 }
 
 /* HEADER */
 header {
-    background: linear-gradient(135deg, #020617, #0f172a);
-    color: white;
+    position: sticky;
+    top: 0;
+    background: #020617;
+    padding: 25px;
     text-align: center;
-    padding: 35px 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    z-index: 1000;
 }
 
-header h1 {
-    font-size: 2.6rem;
-    letter-spacing: 1px;
-}
-
-.role {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    color: #38bdf8;
-}
-
-/* NAV */
 nav a {
     color: #e5e7eb;
-    margin: 0 14px;
+    margin: 0 12px;
     text-decoration: none;
-    font-weight: 600;
-    position: relative;
+    font-weight: bold;
 }
 
-nav a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: #38bdf8;
-    left: 0;
-    bottom: -4px;
-    transition: width 0.3s ease;
+nav a.active {
+    color: var(--accent);
 }
 
-nav a:hover::after {
-    width: 100%;
+/* BUTTONS */
+.btn {
+    background: var(--accent);
+    border: none;
+    padding: 8px 14px;
+    margin: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-/* CARD SECTIONS */
+/* CARDS */
 .card {
-    background: #ffffff;
-    max-width: 1050px;
-    margin: 45px auto;
-    padding: 40px;
-    border-radius: 18px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background: var(--card);
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 16px;
 }
 
-/* CARD HOVER EFFECT */
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 30px 55px rgba(0,0,0,0.35);
+/* REVEAL */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
 }
 
-/* SECTION TITLES */
-h2 {
-    border-left: 6px solid #0ea5e9;
-    padding-left: 12px;
-    margin-bottom: 18px;
-    color: #020617;
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.8s ease;
 }
 
-/* LISTS */
-ul {
-    padding-left: 22px;
-}
-
-ul li {
-    margin-bottom: 8px;
-}
-
-/* HIGHLIGHT BOX */
-.highlight {
-    margin-top: 20px;
-    background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
-    padding: 15px;
-    border-left: 6px solid #0284c7;
-    border-radius: 10px;
-    font-weight: 600;
-}
-
-/* IMAGE BOX */
-.image-box {
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-}
-
+/* IMAGES */
 .image-box img {
     width: 260px;
-    border-radius: 14px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 10px;
 }
 
-/* IMAGE HOVER */
-.image-box img:hover {
-    transform: scale(1.08);
-    box-shadow: 0 18px 40px rgba(0,0,0,0.45);
-}
-
-/* CERTIFICATES GRID */
+/* CERTIFICATES */
 .cert-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+    gap: 25px;
 }
 
-/* CERTIFICATE CARD */
 .cert-card {
-    background: linear-gradient(145deg, #f8fafc, #eef2f7);
-    padding: 18px;
-    border-radius: 16px;
     text-align: center;
-    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* CERTIFICATE HOVER */
-.cert-card:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 25px 45px rgba(0,0,0,0.35);
-}
-
-/* CERTIFICATE IMAGE */
 .cert-card img {
     width: 200px;
     height: 140px;
     object-fit: contain;
-    border-radius: 10px;
-}
-
-/* CERTIFICATE TEXT */
-.cert-card p {
-    margin-top: 12px;
-    font-weight: 700;
-    font-size: 14px;
-    color: #020617;
-}
-
-/* FOOTER */
-footer {
-    background: #020617;
-    color: #e5e7eb;
-    text-align: center;
-    padding: 20px;
-    margin-top: 60px;
-    font-size: 14px;
 }
