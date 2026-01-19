@@ -2,96 +2,103 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background: #f4f4f4;
-    color: #333;
+    background: #0f172a;
+    color: #e5e7eb;
+    line-height: 1.6;
 }
 
 header {
-    background: #0a0a0a;
-    color: #fff;
     text-align: center;
-    padding: 2rem;
-    position: sticky;
-    top: 0;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #020617, #1e293b);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #94a3b8;
+    margin-top: 5px;
+}
+
+nav {
+    margin-top: 20px;
 }
 
 nav a {
-    color: white;
-    margin: 0 15px;
+    color: #38bdf8;
+    margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #00aaff;
+    text-decoration: underline;
 }
 
-section {
-    background: #fff;
-    margin: 2rem auto;
-    padding: 2rem;
+.card {
     max-width: 1000px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 30px auto;
+    padding: 25px;
+    background: #020617;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
-section h2 {
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #00aaff;
-    display: inline-block;
+h2 {
+    margin-bottom: 15px;
+    color: #38bdf8;
 }
 
 ul {
-    margin-top: 1rem;
-    list-style: disc inside;
+    list-style: none;
 }
 
-.projects-list li {
-    background: #e8f4ff;
-    padding: 1rem;
-    margin: 10px 0;
-    border-left: 5px solid #00aaff;
+ul li {
+    margin-bottom: 8px;
 }
 
-/* 🔥 IMAGE SIZE FIX (500x500) */
-section img,
-.certificates img {
-    width: 500px;
-    height: 500px;
+.projects li {
+    padding-left: 10px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slider img {
+    width: 320px;
+    height: 220px;
     object-fit: cover;
-    display: block;
-    margin: 20px auto;
     border-radius: 10px;
+    margin: 0 15px;
+    border: 2px solid #38bdf8;
 }
 
-/* Certificate grid */
-.certificates {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 2rem;
-    justify-items: center;
+.slider button {
+    background: none;
+    border: none;
+    color: #38bdf8;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.slider button:hover {
+    color: white;
 }
 
 footer {
-    background: #0a0a0a;
-    color: white;
     text-align: center;
-    padding: 1.5rem;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    section img,
-    .certificates img {
-        width: 100%;
-        height: auto;
-    }
+    padding: 20px;
+    background: #020617;
+    color: #94a3b8;
 }
