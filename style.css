@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: #1e293b;
 }
 
@@ -17,7 +17,7 @@ header {
     background: #020617;
     color: white;
     text-align: center;
-    padding: 30px 15px;
+    padding: 28px 15px;
     z-index: 1000;
 }
 
@@ -37,26 +37,34 @@ nav a.active {
     color: #38bdf8;
 }
 
-/* BUTTON */
-.btn {
-    display: inline-block;
+/* FLOATING CV BUTTON */
+.floating-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
     background: #38bdf8;
     color: #020617;
-    padding: 8px 16px;
-    margin-top: 12px;
-    border-radius: 20px;
+    padding: 14px 18px;
+    border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+    z-index: 999;
 }
 
-/* CARDS */
+.floating-btn:hover {
+    transform: scale(1.08);
+}
+
+/* CARD */
 .card {
     background: white;
     max-width: 1000px;
     margin: 45px auto;
     padding: 35px;
-    border-radius: 16px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    border-radius: 18px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.25);
     transition: transform 0.3s ease;
 }
 
@@ -82,7 +90,6 @@ h2 {
     transition: 0.8s ease;
 }
 
-/* LISTS */
 ul {
     padding-left: 20px;
 }
@@ -104,9 +111,8 @@ ul {
 }
 
 .image-box img {
-    width: 260px;
+    width: 240px;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 /* CERTIFICATES */
@@ -121,7 +127,7 @@ ul {
 }
 
 .cert-card img {
-    width: 200px;
+    width: 190px;
     height: 140px;
     object-fit: contain;
 }
@@ -129,6 +135,16 @@ ul {
 .cert-card p {
     font-weight: 600;
     margin-top: 8px;
+}
+
+/* CONTACT */
+.contact-list {
+    list-style: none;
+    font-size: 1.05rem;
+}
+
+.contact-list li {
+    margin: 10px 0;
 }
 
 /* FOOTER */
