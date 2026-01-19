@@ -1,19 +1,18 @@
-// Scroll Reveal Animation
+// Scroll Reveal
 const reveals = document.querySelectorAll(".reveal");
 
 function revealOnScroll() {
-    reveals.forEach(section => {
-        const top = section.getBoundingClientRect().top;
+    reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
         if (top < window.innerHeight - 100) {
-            section.classList.add("show");
+            el.classList.add("show");
         }
     });
 }
-
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
 
-// Active Navbar Highlight
+// Active Navbar
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
 
