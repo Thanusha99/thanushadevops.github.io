@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vangara Thanusha | Professional Portfolio</title>
+    <title>Vangara Thanusha | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+<header id="header">
     <h1>Vangara Thanusha</h1>
     <p class="role">System Administrator</p>
 
-    <nav>
+    <nav id="navbar">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#internship">Internship</a>
@@ -20,54 +20,54 @@
         <a href="#certificates">Certificates</a>
         <a href="#interests">More</a>
     </nav>
+
+    <div class="header-buttons">
+        <a href="resume.pdf" download class="btn">📄 Download Resume</a>
+        <button id="themeToggle" class="btn">🌙 Dark Mode</button>
+    </div>
 </header>
 
-<section id="about" class="card fade">
+<section id="about" class="card reveal">
     <h2>About Me</h2>
     <p>
-        Dedicated System Administrator with 1 year of professional experience in managing
-        enterprise IT infrastructure, Windows servers, ServiceNow ITSM processes,
-        Azure DevOps, and application support. Strong focus on system stability,
-        performance, and user satisfaction.
+        Dedicated System Administrator with 1 year of experience in Windows servers,
+        ServiceNow ITSM, Azure DevOps, and enterprise application support.
     </p>
 </section>
 
-<section id="experience" class="card fade">
+<section id="experience" class="card reveal">
     <h2>Work Experience</h2>
-    <p><strong>System Administrator – 1 Year Experience</strong></p>
+    <p><strong>System Administrator – 1 Year</strong></p>
 
     <ul>
-        <li>Managed and supported IT infrastructure including Windows servers and enterprise applications</li>
-        <li>Handled Incidents, Change Requests, and Service Requests using ServiceNow (ITIL)</li>
-        <li>Supported applications: TFS, CAPTIVA, QNXT, BizTalk</li>
-        <li>Performed QNXT installation, configuration, and post-installation support</li>
-        <li>Server monitoring, troubleshooting, patching, and system maintenance</li>
-        <li>Used Azure DevOps for application support and deployments</li>
-        <li>Handled client application emails, issue analysis, and resolution</li>
-        <li>Ensured system availability, performance optimization, and security best practices</li>
-        <li>Maintained technical documentation and supported end-users</li>
+        <li>Managed Windows servers and enterprise IT infrastructure</li>
+        <li>Handled Incidents, Change & Service Requests using ServiceNow</li>
+        <li>Supported QNXT, BizTalk, CAPTIVA, and TFS applications</li>
+        <li>QNXT installation, configuration & post-installation support</li>
+        <li>Server monitoring, patching & troubleshooting</li>
+        <li>Azure DevOps deployments and coordination</li>
+        <li>Maintained documentation and end-user support</li>
     </ul>
 
     <p class="highlight">
-        🏆 <strong>Employee of the Year Award</strong> – Recognized for professionalism,
-        ownership, and consistent high-quality system and application support
+        🏆 <strong>Employee of the Year Award</strong> – Recognized for professionalism and ownership
     </p>
 
     <div class="image-box">
-        <img src="assets/spot-award.jpeg" alt="Employee of the Year Award">
+        <img src="assets/spot-award.jpeg" alt="Award">
     </div>
 </section>
 
-<section id="internship" class="card fade">
+<section id="internship" class="card reveal">
     <h2>Internship</h2>
-    <p><strong>Machine Learning Intern</strong></p>
-    <p><strong>Indian Servers | April 2023 – June 2023</strong></p>
+    <p><strong>Machine Learning Intern – Indian Servers</strong></p>
+    <p><strong>April 2023 – June 2023</strong></p>
 
     <ul>
-        <li>Developed NLP-infused Telegram bot (Gita-GPT) integrated with Quora</li>
-        <li>Built AI chatbot functionalities for personalized recommendations</li>
-        <li>Created a Telegram bot for finding beaches in India</li>
-        <li>Hands-on experience in Python, NLP algorithms, API integration, and chatbot development</li>
+        <li>NLP-based Telegram bot (Gita-GPT) integrated with Quora</li>
+        <li>AI chatbot with personalized recommendations</li>
+        <li>Telegram bot for finding beaches in India</li>
+        <li>Hands-on Python, NLP & API integration</li>
     </ul>
 
     <div class="image-box">
@@ -75,7 +75,7 @@
     </div>
 </section>
 
-<section id="skills" class="card fade">
+<section id="skills" class="card reveal">
     <h2>Technical Skills</h2>
     <ul>
         <li>Python, HTML, CSS, JavaScript</li>
@@ -87,53 +87,39 @@
     </ul>
 </section>
 
-<section id="certificates" class="card fade">
+<section id="certificates" class="card reveal">
     <h2>Certificates</h2>
 
     <div class="cert-grid">
-        <div class="cert-card">
-            <img src="assets/hipaa-cert.jpeg">
-            <p>HIPAA Compliance Training</p>
-        </div>
-
-        <div class="cert-card">
-            <img src="assets/itil-cert.jpeg">
-            <p>ITIL / ServiceNow Foundation</p>
-        </div>
-
-        <div class="cert-card">
-            <img src="assets/python-cert.jpeg">
-            <p>Python Full Stack Development</p>
-        </div>
-
-        <div class="cert-card">
-            <img src="assets/webdesign-cert.jpeg">
-            <p>Website Design & Development</p>
-        </div>
+        <div class="cert-card"><img src="assets/hipaa-cert.jpeg"><p>HIPAA Compliance</p></div>
+        <div class="cert-card"><img src="assets/itil-cert.jpeg"><p>ITIL Foundation</p></div>
+        <div class="cert-card"><img src="assets/python-cert.jpeg"><p>Python Full Stack</p></div>
+        <div class="cert-card"><img src="assets/webdesign-cert.jpeg"><p>Web Design</p></div>
     </div>
 </section>
 
-<section id="interests" class="card fade">
+<section id="interests" class="card reveal">
     <h2>Soft Skills</h2>
     <ul>
-        <li>Good communication skills</li>
-        <li>Quick learner and adaptive</li>
-        <li>Active listener and team player</li>
+        <li>Good communication</li>
+        <li>Quick learner</li>
+        <li>Team player</li>
     </ul>
 
-    <h2>Extra-Curricular Activities</h2>
+    <h2>Extra-Curricular</h2>
     <ul>
-        <li>Holds a Yellow Belt in Karate</li>
-        <li>Enthusiastic dancer and stage performer</li>
+        <li>Yellow Belt in Karate</li>
+        <li>Dancer & stage performer</li>
     </ul>
 
-    <h2>Languages Known</h2>
+    <h2>Languages</h2>
     <p>English, Telugu</p>
 </section>
 
 <footer>
-    <p>© 2026 Vangara Thanusha | Professional Portfolio</p>
+    <p>© 2026 Vangara Thanusha</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
