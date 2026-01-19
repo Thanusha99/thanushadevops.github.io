@@ -3,106 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vangara Thanusha | System Administrator</title>
+    <title>Vangara Thanusha | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
     <h1>VANGARA THANUSHA</h1>
-    <p><strong>SYSTEM ADMINISTRATOR</strong></p>
+    <p>System Administrator</p>
 
     <nav>
         <a href="#about">About</a>
         <a href="#education">Education</a>
-        <a href="#technical-skills">Technical Skills</a>
+        <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
-        <a href="#internship">Internship</a>
         <a href="#projects">Projects</a>
         <a href="#certificates">Certificates</a>
     </nav>
 </header>
 
-<section id="about">
+<section id="about" class="card">
     <h2>About Me</h2>
     <p>
-        Dedicated System Administrator with 1 year of hands-on experience in managing IT infrastructure,
-        enterprise applications, and ITSM processes. Strong expertise in ServiceNow and Azure DevOps.
+        Dedicated System Administrator with 1 year of experience in managing
+        enterprise applications, IT infrastructure, ServiceNow, and Azure DevOps.
     </p>
 </section>
 
-<section id="education">
+<section id="education" class="card">
     <h2>Education</h2>
     <ul>
-        <li><strong>M.Sc Computer Science (2024)</strong> – Osmania University (93%)</li>
-        <li><strong>B.Sc MPCs (2022)</strong> – Osmania University (CGPA 8.3)</li>
-        <li><strong>Intermediate (2019)</strong> – 76%</li>
-        <li><strong>SSC (2017)</strong> – CGPA 8.2</li>
+        <li>M.Sc Computer Science – Osmania University (93%)</li>
+        <li>B.Sc MPCs – Osmania University (CGPA 8.3)</li>
+        <li>Intermediate – 76%</li>
+        <li>SSC – CGPA 8.2</li>
     </ul>
 </section>
 
-<section id="technical-skills">
+<section id="skills" class="card">
     <h2>Technical Skills</h2>
     <ul>
-        <li><strong>Languages:</strong> Python, HTML, CSS, JavaScript</li>
-        <li><strong>Frameworks:</strong> Django, .NET</li>
-        <li><strong>DevOps:</strong> Azure DevOps</li>
-        <li><strong>ITSM:</strong> ServiceNow</li>
-        <li><strong>Enterprise Apps:</strong> QNXT, BizTalk, CAPTIVA, TFS</li>
-        <li><strong>Databases:</strong> SQL, MySQL</li>
-        <li><strong>OS:</strong> Windows</li>
+        <li>Python, HTML, CSS, JavaScript</li>
+        <li>Django, .NET</li>
+        <li>Azure DevOps, ServiceNow</li>
+        <li>QNXT, BizTalk, CAPTIVA, TFS</li>
+        <li>SQL, MySQL</li>
+        <li>Windows Server</li>
     </ul>
 </section>
 
-<section id="experience">
+<section id="experience" class="card">
     <h2>Work Experience</h2>
     <ul>
-        <li>Windows server administration & monitoring</li>
-        <li>Incident & Change management using ServiceNow</li>
-        <li>Application support: QNXT, BizTalk, CAPTIVA</li>
-        <li>QNXT installation & post-installation support</li>
-        <li>Azure DevOps deployments & coordination</li>
-        <li><strong>🏆 Spot Award for outstanding performance</strong></li>
+        <li>Windows Server Administration</li>
+        <li>Incident & Change Management (ServiceNow)</li>
+        <li>QNXT Installation & Support</li>
+        <li>Azure DevOps Deployments</li>
+        <li><strong>🏆 Spot Award Winner</strong></li>
     </ul>
-    <img src="assets/spot-award.jpeg" alt="Spot Award">
+
+    <div class="slider">
+        <button onclick="prevImage()">❮</button>
+        <img id="sliderImage" src="assets/spot-award.jpeg" alt="Award">
+        <button onclick="nextImage()">❯</button>
+    </div>
 </section>
 
-<section id="internship">
-    <h2>Internship</h2>
-    <p><strong>Machine Learning Intern – Indian Servers</strong></p>
-    <ul>
-        <li>NLP-based Telegram Bot (Gita-GPT)</li>
-        <li>API integrations & chatbot development</li>
-        <li>Python & NLP hands-on experience</li>
-    </ul>
-    <img src="assets/internship-cert.jpeg" alt="Internship Certificate">
-</section>
-
-<section id="projects">
+<section id="projects" class="card">
     <h2>Projects</h2>
-    <ul class="projects-list">
-        <li>Attendance Application using .NET</li>
+    <ul class="projects">
+        <li>Attendance Application (.NET)</li>
         <li>Online Bus Ticket Booking System</li>
         <li>Video Encryption & Decryption (AES)</li>
-        <li>Telegram NLP Chatbot</li>
-        <li>Hostel Searching Web Application</li>
+        <li>NLP Telegram Chatbot</li>
+        <li>Hostel Searching Web App</li>
     </ul>
 </section>
 
-<section id="certificates">
+<section id="certificates" class="card">
     <h2>Certificates</h2>
-    <div class="certificates">
-        <img src="assets/hipaa-cert.jpeg" alt="HIPAA Certificate">
-        <img src="assets/itil-cert.jpeg" alt="ITIL Certificate">
-        <img src="assets/programming-cert.jpeg" alt="Programming Certificate">
-        <img src="assets/python-cert.jpeg" alt="Python Certificate">
-        <img src="assets/webdesign-cert.jpeg" alt="Web Design Certificate">
+    <div class="slider">
+        <button onclick="prevCert()">❮</button>
+        <img id="certImage" src="assets/hipaa-cert.jpeg" alt="Certificate">
+        <button onclick="nextCert()">❯</button>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Vangara Thanusha</p>
+    <p>© 2026 Vangara Thanusha | Portfolio</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
