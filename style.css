@@ -1,153 +1,66 @@
-
-/* ---------------- General Reset ---------------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
 body {
-    line-height: 1.6;
-    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
     color: #333;
 }
 
-/* ---------------- Header ---------------- */
 header {
-    background-color: #0a0a0a;
-    color: #fff;
+    background: #0f172a;
+    color: white;
+    padding: 20px;
     text-align: center;
-    padding: 2rem 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.3rem;
-    letter-spacing: 1px;
+    margin: 0;
 }
 
-header p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+.role {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 nav a {
-    color: #fff;
-    margin: 0 1rem;
+    color: #38bdf8;
+    margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
-nav a:hover {
-    color: #00aaff;
-}
-
-/* ---------------- Sections ---------------- */
 section {
-    padding: 4rem 1rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #fff;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
 }
 
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #0a0a0a;
-    border-bottom: 2px solid #00aaff;
-    display: inline-block;
+h2 {
+    border-bottom: 2px solid #0f172a;
     padding-bottom: 5px;
 }
 
-section p, section ul {
-    margin-top: 1rem;
-}
-
 ul {
-    list-style: disc inside;
+    line-height: 1.8;
 }
 
-/* ---------------- Projects Section ---------------- */
-.projects-list {
+.resume-img {
+    width: 220px;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.cert-grid {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.projects-list li {
-    background-color: #e0f0ff;
-    padding: 1rem 1.5rem;
-    border-left: 5px solid #00aaff;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.projects-list li:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* ---------------- Certificates Section ---------------- */
-.certificates {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.certificates figure {
-    text-align: center;
-    background-color: #f0f8ff;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.certificates figure:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.certificates figcaption {
-    margin-top: 0.5rem;
-    font-weight: bold;
-    color: #0a0a0a;
-}
-
-/* ---------------- Footer ---------------- */
 footer {
+    background: #0f172a;
+    color: white;
     text-align: center;
-    padding: 2rem 1rem;
-    background-color: #0a0a0a;
-    color: #fff;
-}
-
-/* ---------------- Smooth Scroll ---------------- */
-html {
-    scroll-behavior: smooth;
-}
-
-/* ---------------- Responsive ---------------- */
-@media(max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    section h2 {
-        font-size: 1.7rem;
-    }
-
-    .projects-list li {
-        font-size: 0.95rem;
-    }
+    padding: 10px;
 }
