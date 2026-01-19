@@ -1,26 +1,13 @@
-:root {
-    --bg: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-    --card: #ffffff;
-    --text: #1e293b;
-    --accent: #38bdf8;
-}
-
-body.dark {
-    --bg: #020617;
-    --card: #0f172a;
-    --text: #e5e7eb;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Segoe UI, Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 body {
-    background: var(--bg);
-    color: var(--text);
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: #1e293b;
 }
 
 /* HEADER */
@@ -28,9 +15,15 @@ header {
     position: sticky;
     top: 0;
     background: #020617;
-    padding: 25px;
+    color: white;
     text-align: center;
+    padding: 30px 15px;
     z-index: 1000;
+}
+
+.role {
+    color: #38bdf8;
+    margin-bottom: 10px;
 }
 
 nav a {
@@ -41,27 +34,40 @@ nav a {
 }
 
 nav a.active {
-    color: var(--accent);
+    color: #38bdf8;
 }
 
-/* BUTTONS */
+/* BUTTON */
 .btn {
-    background: var(--accent);
-    border: none;
-    padding: 8px 14px;
-    margin: 8px;
+    display: inline-block;
+    background: #38bdf8;
+    color: #020617;
+    padding: 8px 16px;
+    margin-top: 12px;
     border-radius: 20px;
-    cursor: pointer;
+    text-decoration: none;
     font-weight: bold;
 }
 
 /* CARDS */
 .card {
-    background: var(--card);
+    background: white;
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 45px auto;
     padding: 35px;
     border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+h2 {
+    border-left: 6px solid #38bdf8;
+    padding-left: 12px;
+    margin-bottom: 15px;
 }
 
 /* REVEAL */
@@ -76,10 +82,31 @@ nav a.active {
     transition: 0.8s ease;
 }
 
+/* LISTS */
+ul {
+    padding-left: 20px;
+}
+
+/* HIGHLIGHT */
+.highlight {
+    margin-top: 15px;
+    background: #e0f2fe;
+    padding: 12px;
+    border-left: 5px solid #0284c7;
+    border-radius: 6px;
+}
+
 /* IMAGES */
+.image-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .image-box img {
     width: 260px;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 /* CERTIFICATES */
@@ -97,4 +124,18 @@ nav a.active {
     width: 200px;
     height: 140px;
     object-fit: contain;
+}
+
+.cert-card p {
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
 }
