@@ -5,6 +5,7 @@ body {
     color: #333;
 }
 
+/* HEADER */
 header {
     background: #0f172a;
     color: white;
@@ -14,11 +15,16 @@ header {
 
 header h1 {
     margin: 0;
+    letter-spacing: 1px;
 }
 
-.role {
-    font-weight: bold;
-    margin-bottom: 10px;
+header p {
+    margin: 5px 0;
+}
+
+/* NAVIGATION */
+nav {
+    margin-top: 10px;
 }
 
 nav a {
@@ -28,39 +34,64 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
 section {
     padding: 30px;
     background: white;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
     border-radius: 8px;
 }
 
+/* SECTION HEADINGS */
 h2 {
     border-bottom: 2px solid #0f172a;
     padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
+/* LISTS */
 ul {
     line-height: 1.8;
+    padding-left: 20px;
 }
 
-.resume-img {
-    width: 220px;
-    height: auto;
-    margin-top: 15px;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+/* PROJECT LIST STYLE */
+.projects-list li {
+    background: #e0f2fe;
+    margin: 8px 0;
+    padding: 10px;
+    border-left: 4px solid #0f172a;
+    border-radius: 4px;
 }
 
-.cert-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
+/* FOOTER */
 footer {
     background: #0f172a;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
 }
