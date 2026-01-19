@@ -1,19 +1,19 @@
-// Scroll Reveal
+// Scroll Reveal Animation
 const reveals = document.querySelectorAll(".reveal");
 
-const revealOnScroll = () => {
+function revealOnScroll() {
     reveals.forEach(section => {
         const top = section.getBoundingClientRect().top;
         if (top < window.innerHeight - 100) {
             section.classList.add("show");
         }
     });
-};
+}
 
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
 
-// Active Nav Highlight
+// Active Navbar Highlight
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
 
@@ -32,10 +32,3 @@ window.addEventListener("scroll", () => {
         }
     });
 });
-
-// Dark / Light Toggle
-const toggle = document.getElementById("themeToggle");
-toggle.onclick = () => {
-    document.body.classList.toggle("dark");
-};
-
